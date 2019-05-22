@@ -12,7 +12,7 @@ import org.junit.Test;
 public class DatabaseMigrateTest {
 	
 
-	@Test
+	/*@Test
 	public void migrateH2() throws SQLException, IOException {
 		Server server = Server.createTcpServer("-tcpPort", "9123", "-tcpAllowOthers").start();
 		DatabaseMigrationBuilder
@@ -33,7 +33,7 @@ public class DatabaseMigrateTest {
 			.migrate()
 			.migrate();
 		server.stop();
-	}
+	}*/
 	
 	@Test
 	public void migrateMySql() throws SQLException {
@@ -44,8 +44,8 @@ public class DatabaseMigrateTest {
 			.withHost("localhost")
 			.withPort(3306)
 			.withDatabase("migrate")
-			.withUsername("migrate")
-			.withPassword("123456")
+			.withUsername("root")
+			.withPassword("142857")
 			.withProperties()
 				.withProperty("useSSL", "false")
 			.end()

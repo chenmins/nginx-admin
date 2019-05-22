@@ -22,8 +22,8 @@ public class NginxPingTest {
 	@Test
 	public void ping() {
 		nginxAgentClient.api(NginxAgentClientApis.ping())
-				.withAuthorizationKey("fdoinsafodsoianoifd")
-				.withEndpoint("https://192.168.99.100:3443")
+				.withAuthorizationKey("changeit")
+				.withEndpoint("http://192.168.1.172:3000")
 				.build()
 				.ping()
 				.thenAccept(nginxResponse -> {

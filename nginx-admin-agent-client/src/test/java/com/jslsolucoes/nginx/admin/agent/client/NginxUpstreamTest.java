@@ -23,7 +23,7 @@ public class NginxUpstreamTest {
 	private NginxAgentClient nginxAgentClient;
 	private NginxUpstream nginxUpstream;
 
-	@Before
+	/*@Before
 	public void setUp() {
 		nginxAgentClient = NginxAgentClientBuilder.newBuilder().build();
 		nginxUpstream = nginxAgentClient.api(NginxAgentClientApis.upstream())
@@ -124,5 +124,5 @@ public class NginxUpstreamTest {
 	public void tearDown() {
 		nginxUpstream.delete().join();
 		nginxAgentClient.close();
-	}
+	}*/
 }

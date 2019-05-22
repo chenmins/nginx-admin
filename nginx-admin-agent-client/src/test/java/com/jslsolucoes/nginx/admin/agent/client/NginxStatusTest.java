@@ -22,8 +22,8 @@ public class NginxStatusTest {
 	@Test
 	public void status() {
 
-		nginxAgentClient.api(NginxAgentClientApis.status()).withAuthorizationKey("fdoinsafodsoianoifd")
-				.withEndpoint("http://192.168.99.100:3000")
+		nginxAgentClient.api(NginxAgentClientApis.status()).withAuthorizationKey("changeit")
+				.withEndpoint("http://192.168.1.172:3000")
 				.build().status().thenAccept(nginxResponse -> {
 					if (nginxResponse.error()) {
 						NginxExceptionResponse nginxExceptionResponse = (NginxExceptionResponse) nginxResponse;

@@ -19,11 +19,11 @@ public class NginxCommandLineInterfaceTest {
 	@Before
 	public void setUp() {
 		nginxAgentClient = NginxAgentClientBuilder.newBuilder().build();
-		nginxAgentClient.api(NginxAgentClientApis.configure()).withAuthorizationKey("fdoinsafodsoianoifd")
-				.withEndpoint("https://192.168.99.100:3443").withGzip(true).withMaxPostSize(15).build().configure()
+		nginxAgentClient.api(NginxAgentClientApis.configure()).withAuthorizationKey("changeit")
+				.withEndpoint("http://192.168.1.172:3000").withGzip(true).withMaxPostSize(15).build().configure()
 				.join();
 		nginxCommandLineInterface = nginxAgentClient.api(NginxAgentClientApis.cli())
-				.withAuthorizationKey("fdoinsafodsoianoifd").withEndpoint("http://192.168.99.100:3000").build();
+				.withAuthorizationKey("changeit").withEndpoint("http://192.168.1.172:3000").build();
 	}
 
 	@Test
