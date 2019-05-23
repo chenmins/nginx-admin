@@ -1,4 +1,4 @@
-package com.jslsolucoes.nginxrest.wcl;
+package com.jslsolucoes.nginxrest.util;
 
 import java.util.List;
 
@@ -14,4 +14,5 @@ public class Result<T> {
         this.total = total;
         this.data = data;
     }
+
 }

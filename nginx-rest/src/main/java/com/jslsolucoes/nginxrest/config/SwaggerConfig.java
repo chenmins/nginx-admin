@@ -1,4 +1,4 @@
-package com.jslsolucoes.nginxrest.wcl;
+package com.jslsolucoes.nginxrest.config;
 
 import io.swagger.annotations.ApiOperation;
 import org.springframework.context.annotation.Bean;
